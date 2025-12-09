@@ -1,0 +1,80 @@
+openapi: 3.0.4
+info:
+  title: Title Case Converter
+  description: Title Capitalization is a simple tool for converting title text to various cases. It returns the text converted to your desired case.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/titlecapitalization:
+    post:
+      summary: Convert Text to Various Cases
+      description: Title Capitalization is a simple tool for converting title text to various cases. It returns the text converted to your desired case.
+      operationId: titlecapitalization
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  style: title-case
+                  text: Comprehensive Analysis of Quarterly Financial Performance and Strategic Initiatives for Sustainable Growth
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+                  description: The text to convert to title case
+                  example: comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth
+                style:
+                  type: string
+                  description: The case to convert the text to (apa, chicago, ap, mla, nyt, ama, bb, wikipedia, email, title-case, sentence-case, uppercase, lowercase, first-letter, alt-case, toggle-case)
+                  example: title-case
+              required:
+              - text
+              - style
+              example:
+                text: comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth
+                style: title-case
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
