@@ -1,1 +1,3 @@
-from .apiClient import TitlecapitalizationAPIClient
+from .apiClient import TitlecapitalizationAPIClient, TitlecapitalizationAPIClientError
+
+__all__ = ['TitlecapitalizationAPIClient', 'TitlecapitalizationAPIClientError']
