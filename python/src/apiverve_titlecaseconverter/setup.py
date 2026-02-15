@@ -10,20 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_titlecaseconverter',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     description='Title Capitalization is a simple tool for converting title text to various cases. It returns the text converted to your desired case.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
-    project_urls={
-        'Homepage': 'https://apiverve.com',
-        'Documentation': 'https://docs.apiverve.com/ref/titlecapitalization',
-        'Source': 'https://github.com/apiverve/titlecapitalization-api',
-        'Bug Tracker': 'https://github.com/apiverve/titlecapitalization-api/issues'
-    },
+    url='https://apiverve.com/marketplace/titlecapitalization?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
