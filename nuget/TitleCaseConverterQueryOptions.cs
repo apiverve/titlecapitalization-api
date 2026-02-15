@@ -12,14 +12,12 @@ namespace APIVerve.API.TitleCaseConverter
     {
         /// <summary>
         /// The text to convert to title case
-        /// Example: hello world
         /// </summary>
         [JsonProperty("text")]
         public string Text { get; set; }
 
         /// <summary>
-        /// The case to convert the text to (apa, chicago, ap, mla, nyt, ama, bb, wikipedia, email, title-case, sentence-case, uppercase, lowercase, first-letter, alt-case, toggle-case)
-        /// Example: title
+        /// The case to convert the text to
         /// </summary>
         [JsonProperty("style")]
         public string Style { get; set; }
