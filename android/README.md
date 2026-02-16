@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:titlecapitalization-api:1.1.13'
+    implementation 'com.github.apiverve:titlecapitalization-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ TitleCaseConverterAPIClient client = new TitleCaseConverterAPIClient("YOUR_API_K
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("text", "hello world");
+    parameters.put("text", "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth");
     parameters.put("style", "title-case");
 
     // Execute the request
