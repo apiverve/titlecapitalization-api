@@ -44,7 +44,10 @@ from apiverve_titlecaseconverter.apiClient import TitlecapitalizationAPIClient
 # Initialize the client with your APIVerve API key
 api = TitlecapitalizationAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth", "style": "title-case" }
+query = {
+    "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth",
+    "style": "title-case"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth", "style": "title-case" }
+query = {
+    "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth",
+    "style": "title-case"
+}
 ```
 
 ###### Simple Request
@@ -121,7 +127,10 @@ from apiverve_titlecaseconverter.apiClient import TitlecapitalizationAPIClient, 
 
 api = TitlecapitalizationAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth", "style": "title-case" }
+query = {
+    "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth",
+    "style": "title-case"
+}
 
 try:
     result = api.execute(query)
@@ -142,7 +151,10 @@ from apiverve_titlecaseconverter.apiClient import TitlecapitalizationAPIClient, 
 
 api = TitlecapitalizationAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth", "style": "title-case" }
+query = {
+    "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth",
+    "style": "title-case"
+}
 
 try:
     result = api.execute(query)
@@ -176,7 +188,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_titlecaseconverter.apiClient import TitlecapitalizationAPIClient, TitlecapitalizationAPIClientError
 
-query = { "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth", "style": "title-case" }
+query = {
+    "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth",
+    "style": "title-case"
+}
 
 # Using context manager ensures proper cleanup
 with TitlecapitalizationAPIClient("[YOUR_API_KEY]") as api:
@@ -202,7 +217,10 @@ from apiverve_titlecaseconverter.apiClient import TitlecapitalizationAPIClient
 # Enable debug mode
 api = TitlecapitalizationAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth", "style": "title-case" }
+query = {
+    "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth",
+    "style": "title-case"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -217,8 +235,12 @@ from apiverve_titlecaseconverter.apiClient import TitlecapitalizationAPIClient
 
 api = TitlecapitalizationAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth",
+    "style": "title-case"
+}
+
 try:
-    query = { "text": "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth", "style": "title-case" }
     result = api.execute(query)
     print(result)
 finally:
