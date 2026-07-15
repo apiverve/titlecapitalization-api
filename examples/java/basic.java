@@ -12,8 +12,13 @@ public class BasicExample {
         TitleCaseConverterAPIClient client = new TitleCaseConverterAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Execute the API request (no parameters required)
-            APIResponse response = client.execute(null);
+            // Request body
+            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
+        parameters.put(&quot;text&quot;, &quot;comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth&quot;);
+        parameters.put(&quot;style&quot;, &quot;title-case&quot;);
+
+            // Execute the API request
+            APIResponse response = client.execute(parameters);
 
             // Check if the request was successful
             if (response.isSuccess()) {
