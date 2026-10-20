@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/titlecapitalization",
-  "version": "1.2.0",
-  "description": "Title Capitalization is a simple tool for converting title text to various cases. It returns the text converted to your desired case.",
+  "version": "1.2.2",
+  "description": "Title Case Converter formats text strings into specific editorial style guidelines and capitalization standards. Send raw headline text and a chosen rule set like APA, Chicago, or AP to receive properly capitalized copy.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "title capitalization", "title capitalization api", "title capitalization tool", "title capitalization software", "title capitalization service"
+    "title case converter api", "headline capitalization", "convert text to sentence case", "ap style headline converter", "chicago style title converter"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/titlecapitalization-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/titlecapitalization?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/titlecapitalization?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
