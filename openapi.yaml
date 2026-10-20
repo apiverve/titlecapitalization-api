@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Title Case Converter
   description: >-
-    Title Capitalization is a simple tool for converting title text to various
-    cases. It returns the text converted to your desired case.
+    Title Case Converter formats text strings into specific editorial style
+    guidelines and capitalization standards. Send raw headline text and a chosen
+    rule set like APA, Chicago, or AP to receive properly capitalized copy.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/titlecapitalization:
     post:
-      summary: Convert Text to Various Cases
+      summary: Title Case Converter
       description: Convert text to title case
       operationId: titlecapitalization
       parameters: []

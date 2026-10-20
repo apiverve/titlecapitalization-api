@@ -1,13 +1,13 @@
-# [Title Case Converter API](https://apiverve.com/marketplace/titlecapitalization?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Title Case Converter API](https://apiverve.com/marketplace/titlecapitalization?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Title Capitalization is a simple tool for converting title text to various cases. It returns the text converted to your desired case.
+Title Case Converter formats text strings into specific editorial style guidelines and capitalization standards. Send raw headline text and a chosen rule set like APA, Chicago, or AP to receive properly capitalized copy.
 
 The Title Case Converter API provides a simple, reliable way to integrate title case converter functionality into your applications. Built for developers who need production-ready title case converter capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/titlecapitalization?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/titlecapitalization?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/titlecapitalization?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/titlecapitalization?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -169,7 +169,7 @@ go get github.com/apiverve/titlecapitalization-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Title Case Converter API](https://apiverve.com/marketplace/titlecapitalization?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Title Case Converter API](https://apiverve.com/marketplace/titlecapitalization?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/titlecapitalization](https://docs.apiverve.com/ref/titlecapitalization)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -199,11 +199,29 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Title Case Converter API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "style": "title-case",
+    "text": "Comprehensive Analysis of Quarterly Financial Performance and Strategic Initiatives for Sustainable Growth"
+  }
 }
 ```
 
@@ -211,7 +229,7 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Title Case Converter API](https://apiverve.com/marketplace/titlecapitalization?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Title Case Converter API](https://apiverve.com/marketplace/titlecapitalization?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
