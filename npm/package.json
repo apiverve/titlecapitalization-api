@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/titlecapitalization",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Title Case Converter formats text strings into specific editorial style guidelines and capitalization standards. Send raw headline text and a chosen rule set like APA, Chicago, or AP to receive properly capitalized copy.",
   "main": "index.js",
   "types": "index.d.ts",
